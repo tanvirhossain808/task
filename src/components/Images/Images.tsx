@@ -5,7 +5,8 @@ type LayoutProps = {
     width: number,
     src: string,
     alt: string,
-    objectFit?: string
+    objectFit?: string,
+    className?: string
 };
 
 
