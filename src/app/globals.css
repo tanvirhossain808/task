@@ -44,3 +44,19 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lexend-light';
+  src: local('Lexend-light'),
+    url('/fonts/lexend-fonts/Lexend-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend-medium';
+  src: local('Lexend-light'),
+    url('/public/fonts/lexend-fonts/Lexend-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

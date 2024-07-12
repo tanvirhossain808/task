@@ -15,7 +15,9 @@ const config: Config = {
       },
       fontFamily: {
         "Lexend": ["Lexend", "sans-serif"],
-        "Lexend-semi": ["Lexend-semi", "sans-serif"]
+        "Lexend-semi": ["Lexend-semi", "sans-serif"],
+        "Lexend-light": ["Lexend-light", "sans-serif"],
+        "Lexend-medium": ["Lexend-medium", "sans-serif"]
       },
       screens: {
         'xs': '480px', // Custom screen size for extra small devices
