@@ -20,6 +20,7 @@ const config: Config = {
         "Lexend-medium": ["Lexend-medium", "sans-serif"]
       },
       screens: {
+        "es": "425px",
         'xs': '480px', // Custom screen size for extra small devices
         'sm': '640px', // Small devices
         'md': '768px', // Medium devices

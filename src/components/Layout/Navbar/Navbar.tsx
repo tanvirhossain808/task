@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isActive, setIsActive] = useState(false)
     return (
         <nav className=" bg-[#1B1C1E] h-20">
-            <div className="flex items-center mr-6 ml-6 h-full lg:max-w-[1152px] lg:mx-auto">
+            <div className="flex items-center mx-6 h-full lg:max-w-[1152px] lg:px-6 lg:mx-auto">
                 <div>
                     <Link href={"/"}>
                         <Images src="/images/mobile-images/nav/logo/Logo.png" width={155} height={28} alt="logo" objectFit="cover" /></Link>
