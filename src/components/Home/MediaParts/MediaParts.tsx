@@ -1,4 +1,5 @@
 import Images from "@/components/Images/Images";
+import Link from "next/link";
 
 const MediaParts = () => {
     const images = [
@@ -14,19 +15,47 @@ const MediaParts = () => {
         "/images/mobile-images/main/Videos/vid4.png",
     ]
     return (
-        <div className="mt-6 flex justify-between w-full px-2">
-            <div className="grid grid-cols-2 ">
+        <div className="mt-6 flex justify-between gap-[4%] w-full px-2 flex-wrap">
+            <div className="grid grid-cols-2 flex-grow relative">
                 {
-                    images.map((img, index) => <Images key={index} src={img} width={80} height={80} alt="Photos" className="" />)
+
+                    images.map((img, index) => <>
+                        <Images key={index} src={img} width={80} height={80} alt="Photos" className="min-w-20 w-full max-h-20 h-auto" />
+
+                    </>
+                    )
                 }
+                <Link className="absolute top-full right-0 font-Lexend-medium text-[#196AA0] text-xs" href="#">More +</Link>
             </div>
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full flex-grow relative">
                 <Images className="col-span-3 row-span-2 w-full h-20 min-h-[100px]" src={videos[0]} width={180} height={100} alt="Videos" />
                 <div className="flex gap-2 justify-center mt-2">
                     {
-                        videos.filter((videos, index) => index !== 0).map((vid, index) => <Images key={index} src={vid} className={`h-12`} width={52} height={48} alt="Videos" />)
+                        videos.filter((videos, index) => index !== 0).map((vid, index) =>
+                            <div key={index} className=" min-w-[52px] w-full min-h-11 relative flex-grow-1">
+                                <Images key={index} src={vid} className={`w-full max-h-12`} width={52} height={48} alt="Videos" />
+                                <span className="absolute top-1/2 z-10 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                    <svg className="" xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                                        <g filter="url(#filter0_b_4_232)">
+                                            <rect x="1" y="1" width="20" height="14.2857" rx="3" fill="#D0D0D0" fillOpacity="0.2" />
+                                            <rect x="1" y="1" width="20" height="14.2857" rx="3" stroke="#F6F6F6" strokeOpacity="0.6" strokeWidth="0.6" />
+                                        </g>
+                                        <path d="M13.8571 8.14285L9.57143 10.6172L9.57143 5.66849L13.8571 8.14285Z" fill="#F6F6F6" fillOpacity="0.8" />
+                                        <defs>
+                                            <filter id="filter0_b_4_232" x="-3.3" y="-3.3" width="28.6" height="22.8857" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4_232" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4_232" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                        )
                     }
                 </div>
+                <Link className="absolute top-full right-0 font-Lexend-medium text-[#196AA0] text-xs" href="#">More +</Link>
             </div>
         </div >
     );

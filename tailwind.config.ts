@@ -28,6 +28,12 @@ const config: Config = {
         '2xl': '1536px', // Custom screen size for 2x extra large devices
         '3xl': '1920px'
       },
+      textIndent: {
+        '2em': '2em',
+      },
+      margin: {
+        '2em': '2em',
+      }
     },
   },
   plugins: [],

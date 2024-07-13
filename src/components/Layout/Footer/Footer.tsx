@@ -1,9 +1,9 @@
 
 const Footer = () => {
+    const date = new Date(Date.now()).getFullYear();
     return (
-        <div>
-            <h1>This is for footer</h1>
-
+        <div className="bg-black flex items-center justify-center text-white h-10">
+            <p>All copyright reserved@ by .. {date}</p>
         </div>
     );
 };
