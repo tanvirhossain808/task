@@ -12,7 +12,7 @@ const ProfileSection = () => {
                     <span className="font-Lexend-semi text-[#2B2B2B] text-xl">•</span>
                     <p className="h-full font-Lexend-light cursor-pointer text-[#76A4CE] text-xs">@johndoe</p>
                 </div>
-                <div className="flex items-center w-full justify-between">
+                <div className="flex items-center flex-wrap gap-y-2 w-full justify-between">
                     <p className="w-[127px] text-[12px] text-[#1B1C1E]">Astrophotography 🌌 Gamer 👾
                     </p>
                     <button className="w-20 h-[30px] bg-[#196AA0] font-Lexend-semi rounded-[100px] text-[#FEFEFE] text-[14px]">Follow</button>

@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={''}>
+      <body className='bg-[#fff] lg:bg-[#FFFEFD]'>
         <Layout>
           <main>
             {children}
