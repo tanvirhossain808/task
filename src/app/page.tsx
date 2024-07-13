@@ -7,16 +7,23 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <HomeHero />
-      <main className=" bg-[#F6F6F6] lg:mx-auto mx-6 lg:max-w-[1152px]">
-        <div className='bg-[#F6F6F6]'>
-          <ProfileSection />
-        </div>
-        <div className="mb-[25px]">
+      <div className="">
+        <HomeHero />
+        <main className=" bg-[#F6F6F6] lg:mx-auto mx-6 lg:max-w-[1152px] lg:flex justify-between">
+          <div className=''>
+            <ProfileSection />
+            <div className="hidden lg:block">
+              <Posts />
+            </div>
+          </div>
+          {/* <div className="mb-[25px] order-1"> */}
           <MediaParts />
-        </div>
-        <Posts />
-      </main>
+          {/* </div> */}
+          <div className="lg:hidden">
+            <Posts />
+          </div>
+        </main>
+      </div>
     </>
   );
 }

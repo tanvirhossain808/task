@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CSSProperties } from "react";
 type LayoutProps = {
     radius?: number,
     height: number,
@@ -6,7 +7,8 @@ type LayoutProps = {
     src: string,
     alt: string,
     objectFit?: string,
-    className?: string
+    className?: string,
+    style?: CSSProperties
 };
 
 
