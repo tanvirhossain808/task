@@ -2,8 +2,8 @@ import Images from "@/components/Images/Images";
 
 const ProfileSection = () => {
     return (
-        <div className="flex items-center pl-[18px] pr-1 flex-wrap">
-            <Images src="/images/big-screen/main/logo/Profile Pic (1).png" className="-translate-y-1/2 w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]" width={200} height={200} alt="profile picture" />
+        <div className="flex items-center lg:items-end pl-[18px] pr-1 flex-wrap lg:-translate-y-1/2">
+            <Images src="/images/big-screen/main/logo/Profile Pic (1).png" className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] -translate-y-1/2 lg:-translate-y-0" width={200} height={200} alt="profile picture" />
             <div className="ml-4 basis-[177px] flex-grow">
                 <div className="flex gap-x-2 h-full items-center lg:text-2xl">
                     <h1 className="font-Lexend-semi text-[#1d1919] h-full text-xl">

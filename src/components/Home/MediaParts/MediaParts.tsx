@@ -15,8 +15,8 @@ const MediaParts = () => {
         "/images/mobile-images/main/Videos/vid4.png",
     ]
     return (
-        <div className="mt-6 flex justify-between mb-[25px] lg:flex-col flex-col lg:flex-nowrap gap-[4%] w-full px-2 flex-wrap lg:w-auto lg:mt-[55px]">
-            <div className="flex-gro">
+        <div className="mt-6 flex justify-between mb-[25px] lg:flex-col lg:flex-nowrap gap-[4%] w-full px-2 flex-wrap lg:w-auto">
+            <div className="flex-grow lg:flex-grow-0">
                 <h2 className="font-semibold text-2xl text-[#Photos] mb-2">
                     Photos
                 </h2>
@@ -32,17 +32,17 @@ const MediaParts = () => {
                     <Link className="absolute top-full right-0 font-Lexend-medium text-[#196AA0] text-xs" href="#">More +</Link>
                 </div>
             </div>
-            <div className="flex-gro w-auto">
+            <div className="flex-gro w-auto lg:mt-12">
                 <h2 className="font-semibold text-2xl text-[#Photos] mb-2">
                     Videos
                 </h2>
                 <div className="flex flex-col flex-grow relative lg:max-w-[400px]">
                     <Images className="col-span-3 row-span-2 w-full h-20 min-h-[100px] lg:h-full lg:max-w-[400px] lg:max-h-[200px]" src={videos[0]} width={180} height={100} alt="Videos" />
-                    <div className="flex gap-2 justify-center mt-2">
+                    <div className="flex gap-2 justify-between mt-2">
                         {
                             videos.filter((videos, index) => index !== 0).map((vid, index) =>
-                                <div key={index} className=" min-w-[52px] w-full min-h-11 relative flex-grow-1">
-                                    <Images key={index} src={vid} className={`w-full max-h-12`} width={52} height={48} alt="Videos" />
+                                <div key={index} className=" w-[52px] xs:w-[70px] min-h-11 relative flex-grow-1">
+                                    <Images key={index} src={vid} style={{ objectFit: "cover" }} className={` w-full lg:w-full lg:h-auto`} width={52} height={48} alt="Videos" />
                                     <span className="absolute top-1/2 z-10 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                         <svg className="" xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
                                             <g filter="url(#filter0_b_4_232)">

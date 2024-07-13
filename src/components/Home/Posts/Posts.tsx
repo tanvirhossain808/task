@@ -3,7 +3,7 @@ import Post from "./Post/Post";
 
 const Posts = () => {
     return (
-        <div>
+        <div className="lg:mt-[-62px]">
             {
                 postsDetails.map((post) => <Post key={post.id} postTitle={post.title} postBody={post.body} />)
             }

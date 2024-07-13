@@ -13,7 +13,7 @@ const Post = ({ postTitle, postBody }: LayoutProps) => {
     const [readMore, setReadMore] = useState(false)
     return (
         <div className="mx-[20px]lg:mt-12 mt-6 lg:w-[550px] lg:px-[35px]">
-            <h2 className="font-semibold text-[#2B2B2B] text-base px-3 lg:text-[26px] text-nowrap">{postTitle}</h2>
+            <h2 className="font-semibold text-[#2B2B2B] text-base px-3 lg:text-[26px] lg:text-nowrap">{postTitle}</h2>
             <p className={`${!readMore ? "line-clamp-6 lg:line-clamp-[9]" : ""} indent-[15px] lg:w-full whitespace-pre-line text-xs lg:text-base mt-2 text-[#5F5F5F]`}>{postBody}</p>
             <hr className="bg-gray-800 bg-opacity-10 my-2 h-[1px]" />
             <div className="flex justify-between items-center mb-2">
